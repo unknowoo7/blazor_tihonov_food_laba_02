@@ -10,23 +10,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d3cb01d-a036-48d0-9017-00106bade048" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/laba_02/Components/Pages/DishInfo.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Layout/MainLayout.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Pages/Home.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Services/DishService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Services/DishService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +59,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02/Components/Pages/Home.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/laba_02/wwwroot/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -56,6 +77,7 @@
   "keyToString": {
     ".NET Launch Settings Profile.laba_02: http.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -129,7 +151,8 @@
       <updated>1736076812824</updated>
       <workItem from="1736076814055" duration="3604000" />
       <workItem from="1736080589370" duration="582000" />
-      <workItem from="1736081190100" duration="6263000" />
+      <workItem from="1736081190100" duration="6887000" />
+      <workItem from="1736088444606" duration="841000" />
     </task>
     <servers />
   </component>

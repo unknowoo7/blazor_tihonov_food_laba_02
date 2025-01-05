@@ -1,5 +1,7 @@
 ﻿@page "/"
 @using laba_02.Services
+@inject NavigationManager Navigation
+@rendermode RenderMode.InteractiveServer
 
 <PageTitle>Блюда</PageTitle>
 
@@ -8,10 +10,11 @@
   <div class="container mt-4">
     <div class="card shadow-sm">
       <div class="card-header bg-primary text-white">
-        <h5 class="card-title mb-0">@dish.DishType - #@dish.DishId</h5>
+        <h5 class="card-title mb-0">Блюдо #@dish.DishId - "@dish.DishType"</h5>
         <small class="text-light">Вес: @dish.DishWeight г</small>
       </div>
       <div class="card-body">
+        <p class="mb-2"><strong>Калорийность:</strong> @dish.Calories ккал</p>
         <p class="mb-2"><strong>Калорийность:</strong> @dish.Calories ккал</p>
         <p class="mb-2"><strong>Углеводы:</strong> @dish.Carbohydrates г</p>
         <p><strong>Порядок приготовления:</strong>  
@@ -19,8 +22,7 @@
         </p>
       </div>
       <div class="card-footer text-end">
-        <button class="btn btn-primary btn-sm">Подробнее</button>
-        <button class="btn btn-secondary btn-sm">Редактировать</button>
+        <button class="btn btn-primary btn-sm" @onclick="() => GoToDish(dish.DishId)">Подробнее</button>
       </div>
     </div>
   </div>
@@ -31,11 +33,15 @@
   [Inject] public required IDishService DishService { get; set; }
 
   List<Dish> dishes = new List<Dish>();
-
-
+  
   protected override async Task OnInitializedAsync()
   {
     dishes = DishService.GetDishes();
+  }
+
+  private void GoToDish(int dishId)
+  {
+    Navigation.NavigateTo($"/dish/{dishId}");
   }
 
 }
