@@ -107,3 +107,4 @@ D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\n
 D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\obj\Debug\net8.0\laba_02.csproj.AssemblyReference.cache
 D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\obj\Debug\net8.0\laba_02.csproj.Up2Date
+D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\obj\Debug\net8.0\laba_02.sourcelink.json

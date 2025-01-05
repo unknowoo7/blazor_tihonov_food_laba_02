@@ -10,196 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d3cb01d-a036-48d0-9017-00106bade048" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/habr.Cb8wAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/ploshadka.Qajnag/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/teacher_db.-4HeuA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/App.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Layout/MainLayout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Layout/MainLayout.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Pages/Counter.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Pages/Error.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Pages/Home.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Pages/Weather.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Routes.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/_Imports.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Databse/DatabaseContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Migrations/20250105125750_InitialCreate.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Migrations/20250105125750_InitialCreate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Migrations/DatabaseContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Models/Dish.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Models/Ingredient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Models/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Services/DishService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Humanizer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Mono.TextTemplating.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Npgsql.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/System.CodeDom.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/System.Composition.AttributedModel.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/System.Composition.Convention.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/System.Composition.Hosting.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/System.Composition.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/System.Composition.TypedParts.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.staticwebassets.runtime.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/laba_02.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.Up2Date" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/scopedcss/bundle/laba_02.styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/scopedcss/projectbundle/laba_02.bundle.scp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/staticwebassets.development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/staticwebassets.pack.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/staticwebassets/msbuild.build.laba_02.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.laba_02.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.laba_02.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/staticwebassets/msbuild.laba_02.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/laba_02.csproj.EntityFrameworkCore.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/laba_02.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/laba_02.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/laba_02.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/wwwroot/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/wwwroot/bootstrap/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/wwwroot/bootstrap/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/wwwroot/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Layout/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Pages/Home.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Services/DishService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Services/DishService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +39,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/laba_02/wwwroot/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -298,13 +129,14 @@
       <updated>1736076812824</updated>
       <workItem from="1736076814055" duration="3604000" />
       <workItem from="1736080589370" duration="582000" />
-      <workItem from="1736081190100" duration="5122000" />
+      <workItem from="1736081190100" duration="6263000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

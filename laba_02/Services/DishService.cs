@@ -1,4 +1,6 @@
-﻿namespace laba_02.Services;
+﻿using laba_02.Databse;
+
+namespace laba_02.Services;
 
 public interface IDishService
 {
@@ -7,8 +9,21 @@ public interface IDishService
 
 public class DishService : IDishService
 {
+    readonly DatabaseContext _dbContext;
+    public DishService(DatabaseContext dbContext)
+    {
+        _dbContext = dbContext;
+    }
+    
     public List<Dish> GetDishes()
     {
-        throw new NotImplementedException();
+        try
+        {
+            return _dbContext.Dishes.ToList();
+        }
+        catch (Exception e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

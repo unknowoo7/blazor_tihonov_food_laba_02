@@ -1,5 +1,6 @@
 using laba_02.Components;
 using laba_02.Databse;
+using laba_02.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,8 @@ builder.Services.AddRazorComponents()
 builder.Services.AddDbContext<DatabaseContext>(option =>
     option.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
+
+builder.Services.AddTransient<IDishService, DishService>();
 
 var app = builder.Build();
 
