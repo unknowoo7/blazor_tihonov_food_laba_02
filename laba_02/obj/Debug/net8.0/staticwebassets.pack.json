@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ЧГУ\\7 семестр\\Тихонов\\Web-Blazor\\laba_02\\laba_02\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\laba_02.bundle.scp.css",
+      "PackagePath": "staticwebassets\\laba_02.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\ЧГУ\\7 семестр\\Тихонов\\Web-Blazor\\laba_02\\laba_02\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\ЧГУ\\7 семестр\\Тихонов\\Web-Blazor\\laba_02\\laba_02\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ЧГУ\\7 семестр\\Тихонов\\Web-Blazor\\laba_02\\laba_02\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\ЧГУ\\7 семестр\\Тихонов\\Web-Blazor\\laba_02\\laba_02\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.laba_02.props",
+      "PackagePath": "build\\laba_02.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.laba_02.props",
+      "PackagePath": "buildMultiTargeting\\laba_02.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.laba_02.props",
+      "PackagePath": "buildTransitive\\laba_02.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.laba_02.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
