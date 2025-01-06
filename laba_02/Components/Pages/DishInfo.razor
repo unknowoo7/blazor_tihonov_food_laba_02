@@ -1,7 +1,18 @@
 ﻿@page "/dish/{id:int}"
 @rendermode InteractiveServer
-@using System.Reflection.Metadata
+@using System.Diagnostics
 @using laba_02.Services
+@inject IJSRuntime JSRuntime
+
+<style>
+  .edit-row {
+    display: none; /* Скрываем строки редактирования по умолчанию */
+  }
+</style>
+
+<h1>
+  @GetDishName()
+</h1>
 
 <div class="container mt-5">
   <h2 class="mb-4">Список ингредиентов</h2>
@@ -21,11 +32,30 @@
       <tr>
         <th scope="row">@product.ProductId</th>
         <td>@product.ProductName</td>
-        <td>@(() => GetProductVolume(product.ProductId))</td>
+        <td>@GetProductVolume(product.ProductId)</td>
         <td>@product.UnitOfMeasurement</td>
         <td class="text-center">
-          <button class="btn btn-warning btn-sm me-2">Редактировать</button>
+          <button class="btn btn-warning btn-sm me-2" onclick="showEditRow(@product.ProductId)">Редактировать</button>
           <button class="btn btn-danger btn-sm" @onclick="() => DeleteProduct(product.ProductId)">Удалить</button>
+        </td>
+      </tr>
+      <tr id="edit-row-@product.ProductId" class="edit-row">
+        <td colspan="5">
+          <div class="row g-2">
+            <div class="col-md-4">
+              <InputText @bind-Value="product.ProductName" class="form-control" id="edit-product-name" placeholder="Название продукта"></InputText>
+            </div>
+            <div class="col-md-3">
+              <InputNumber @bind-Value="ingredientVolumeStage" class="form-control" id="edit-volume" placeholder="Объём"></InputNumber>
+            </div>
+            <div class="col-md-3">
+              <InputText @bind-Value="product.UnitOfMeasurement" class="form-control" id="edit-unit" placeholder="Ед. измерения"></InputText>
+            </div>
+            <div class="col-md-2 text-end">
+              <button class="btn btn-success btn-sm" @onclick="() => updateProductAsync(product.ProductId, product.ProductName, product.UnitOfMeasurement)">Сохранить</button>
+              <button class="btn btn-secondary btn-sm" onclick="hideEditRow(@product.ProductId)">Отмена</button>
+            </div>
+          </div>
         </td>
       </tr>
     }
@@ -33,13 +63,45 @@
   </table>
 </div>
 
+<!-- Форма добавления нового продукта -->
+<h5 class="mt-4">Добавить новый продукт</h5>
+<form class="row g-3" @onsubmit="AddProductAsync">
+  <div class="col-md-3">
+    <label for="productName" class="form-label">Название продукта</label>
+    <input type="text" id="productName" class="form-control" @bind="newProduct.ProductName" />
+  </div>
+  <div class="col-md-3">
+    <label for="volume" class="form-label">Объём</label>
+    <input type="number" id="volume" class="form-control" @bind="ingredientVolumeStage" />
+  </div>
+  <div class="col-md-3">
+    <label for="unit" class="form-label">Ед. измерения</label>
+    <input type="text" id="unit" class="form-control" @bind="newProduct.UnitOfMeasurement" />
+  </div>
+  <div class="col-md-3 d-flex align-items-end">
+    <button type="submit" class="btn btn-success w-100">Добавить</button>
+  </div>
+</form>
+
+<script>
+  function showEditRow(id) {
+    document.getElementById(`edit-row-${id}`).style.display = "table-row";
+  }
+
+  function hideEditRow(id) {
+    document.getElementById(`edit-row-${id}`).style.display = "none";
+  }
+</script>
+
 
 @code {
   [Inject] public required IDishService DishService { get; set; }
+  [Inject] public required IIngredientService IngredientService { get; set; }
 
   [Parameter] public int Id { get; set; }
-
-
+  
+  double ingredientVolumeStage = 0;
+  Product newProduct = new();
   List<Ingredient> ingredients = new List<Ingredient>();
   List<Product> products = new List<Product>();
 
@@ -48,19 +110,36 @@
     ingredients = DishService.GetIngredientByDishId(Id);
     products = DishService.GetProductsByIngredientId(Id);
   }
+  
+  string GetDishName()
+  {
+    return DishService.GetDishById(Id).DishType;
+  }
 
   double GetProductVolume(int productId)
   {
     return ingredients.Where(i => i.ProductId == productId).FirstOrDefault().ProductVolume;
   }
-
-  void DeleteProduct(int productnId)
+  
+  async void AddProductAsync()
   {
-    var result = DishService.DeleteProductAndIngredientsAsync(productnId);
-    if (result.IsCompleted)
-    {
-      LoadLists();
-    }
+    var product = await DishService.SaveProductAsync(Id, newProduct.ProductName, newProduct.UnitOfMeasurement);
+    
+    await IngredientService.SaveIngredientAsync(Id, product.ProductId, ingredientVolumeStage);
+    LoadLists();
+  }
+  
+  async void updateProductAsync(int id, string name, string unit)
+  {
+    await DishService.UpdateProductAsync(id, name, unit, ingredientVolumeStage);
+    LoadLists();
+    await JSRuntime.InvokeVoidAsync("hideEditRow", id);
+  }
+
+  async void DeleteProduct(int productnId)
+  {
+    await DishService.DeleteProductAndIngredientsAsync(productnId);
+    LoadLists();
   }
 
   private void LoadLists()

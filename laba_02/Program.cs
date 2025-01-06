@@ -15,6 +15,7 @@ builder.Services.AddDbContext<DatabaseContext>(option =>
 );
 
 builder.Services.AddTransient<IDishService, DishService>();
+builder.Services.AddTransient<IIngredientService, IngredientService>();
 
 var app = builder.Build();
 
