@@ -1,8 +1,71 @@
 ﻿@page "/dish/{id:int}"
+@rendermode InteractiveServer
+@using System.Reflection.Metadata
+@using laba_02.Services
 
-<h3>Dish</h3>
+<div class="container mt-5">
+  <h2 class="mb-4">Список ингредиентов</h2>
+  <table class="table table-striped table-hover">
+    <thead class="table-primary">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Название продукта</th>
+      <th scope="col">Объём</th>
+      <th scope="col">Ед. измерения</th>
+      <th scope="col" class="text-center">Действия</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var product in products)
+    {
+      <tr>
+        <th scope="row">@product.ProductId</th>
+        <td>@product.ProductName</td>
+        <td>@(() => GetProductVolume(product.ProductId))</td>
+        <td>@product.UnitOfMeasurement</td>
+        <td class="text-center">
+          <button class="btn btn-warning btn-sm me-2">Редактировать</button>
+          <button class="btn btn-danger btn-sm" @onclick="() => DeleteProduct(product.ProductId)">Удалить</button>
+        </td>
+      </tr>
+    }
+    </tbody>
+  </table>
+</div>
+
 
 @code {
-  [Parameter]
-  public int Id { get; set; }
+  [Inject] public required IDishService DishService { get; set; }
+
+  [Parameter] public int Id { get; set; }
+
+
+  List<Ingredient> ingredients = new List<Ingredient>();
+  List<Product> products = new List<Product>();
+
+  protected override async Task OnInitializedAsync()
+  {
+    ingredients = DishService.GetIngredientByDishId(Id);
+    products = DishService.GetProductsByIngredientId(Id);
+  }
+
+  double GetProductVolume(int productId)
+  {
+    return ingredients.Where(i => i.ProductId == productId).FirstOrDefault().ProductVolume;
+  }
+
+  void DeleteProduct(int productnId)
+  {
+    var result = DishService.DeleteProductAndIngredientsAsync(productnId);
+    if (result.IsCompleted)
+    {
+      LoadLists();
+    }
+  }
+
+  private void LoadLists()
+  {
+    ingredients = DishService.GetIngredientByDishId(Id);
+    products = DishService.GetProductsByIngredientId(Id);
+  }
 }
