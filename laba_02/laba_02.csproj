@@ -15,5 +15,9 @@
         <PackageReference Include="Npgsql" Version="8.0.5" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.10" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Migrations\" />
+    </ItemGroup>
     
 </Project>

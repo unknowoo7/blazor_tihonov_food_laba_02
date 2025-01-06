@@ -10,14 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d3cb01d-a036-48d0-9017-00106bade048" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/laba_02/Services/IngredientService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/Components/Pages/DishInfo.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Pages/DishInfo.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Migrations/20250105125750_InitialCreate.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Migrations/20250105125750_InitialCreate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Migrations/DatabaseContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/Services/DishService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Services/DishService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/laba_02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/laba_02.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" afterDir="false" />
@@ -42,6 +44,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/243a037ca7a04510a506adfdd94befbac90930/79/c9d36e35/NotImplementedException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7bd7b7d9cd6e4c8688ada5eb58e57eeb2ba938/9a/6b60bd6d/DataException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/38/90552eeb/InternalDbSet`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/laba_02/wwwroot/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -56,7 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.laba_02: http.executor": "Debug",
+    ".NET Launch Settings Profile.laba_02: http.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -134,7 +137,7 @@
       <workItem from="1736080589370" duration="582000" />
       <workItem from="1736081190100" duration="6887000" />
       <workItem from="1736088444606" duration="841000" />
-      <workItem from="1736140829578" duration="14368000" />
+      <workItem from="1736140829578" duration="19365000" />
     </task>
     <servers />
   </component>
@@ -143,26 +146,18 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/laba_02/Services/IngredientService.cs</url>
-          <line>28</line>
-          <properties documentPath="D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\Services\IngredientService.cs" containingFunctionPresentation="Method 'SaveIngredientAsync'">
-            <startOffsets>
-              <option value="620" />
-            </startOffsets>
-            <endOffsets>
-              <option value="659" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

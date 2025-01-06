@@ -1,8 +1,9 @@
 ﻿@page "/dish/{id:int}"
-@rendermode InteractiveServer
-@using System.Diagnostics
 @using laba_02.Services
-@inject IJSRuntime JSRuntime
+@inject IJSRuntime JsRuntime
+@rendermode InteractiveServer
+
+<PageTitle>@GetDishName()</PageTitle>
 
 <style>
   .edit-row {
@@ -107,8 +108,8 @@
 
   protected override async Task OnInitializedAsync()
   {
-    ingredients = DishService.GetIngredientByDishId(Id);
-    products = DishService.GetProductsByIngredientId(Id);
+    ingredients = await DishService.GetIngredientByDishId(Id);
+    products = await DishService.GetProductsByIngredientId(Id);
   }
   
   string GetDishName()
@@ -121,30 +122,30 @@
     return ingredients.Where(i => i.ProductId == productId).FirstOrDefault().ProductVolume;
   }
   
-  async void AddProductAsync()
+  async Task AddProductAsync()
   {
     var product = await DishService.SaveProductAsync(Id, newProduct.ProductName, newProduct.UnitOfMeasurement);
-    
     await IngredientService.SaveIngredientAsync(Id, product.ProductId, ingredientVolumeStage);
-    LoadLists();
+    await LoadLists();
   }
   
-  async void updateProductAsync(int id, string name, string unit)
+  async Task updateProductAsync(int id, string name, string unit)
   {
     await DishService.UpdateProductAsync(id, name, unit, ingredientVolumeStage);
-    LoadLists();
-    await JSRuntime.InvokeVoidAsync("hideEditRow", id);
+    await LoadLists();
+    await JsRuntime.InvokeVoidAsync("hideEditRow", id);
   }
 
-  async void DeleteProduct(int productnId)
+  async Task DeleteProduct(int productnId)
   {
     await DishService.DeleteProductAndIngredientsAsync(productnId);
-    LoadLists();
+    await LoadLists();
   }
 
-  private void LoadLists()
+  async Task LoadLists()
   {
-    ingredients = DishService.GetIngredientByDishId(Id);
-    products = DishService.GetProductsByIngredientId(Id);
+    products = await DishService.GetProductsByIngredientId(Id);
+    ingredients = await DishService.GetIngredientByDishId(Id);
+    StateHasChanged();
   }
 }

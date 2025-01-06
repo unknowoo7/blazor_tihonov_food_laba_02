@@ -6,8 +6,8 @@ public interface IDishService
 {
   public List<Dish> GetDishes();
   public Dish GetDishById(int id);
-  public List<Ingredient> GetIngredientByDishId(int id);
-  public List<Product> GetProductsByIngredientId(int id);
+  public Task<List<Ingredient>> GetIngredientByDishId(int id);
+  public Task<List<Product>> GetProductsByIngredientId(int id);
   public Task<Product> SaveProductAsync(int dishId, string productName, string unit);
   public Task<bool> UpdateProductAsync(int productId, string productName, string unit,  double volume);
   public Task<bool> DeleteProductAndIngredientsAsync(int productId);
@@ -45,7 +45,7 @@ public class DishService : IDishService
     }
   }
 
-  public List<Ingredient> GetIngredientByDishId(int id)
+  public async Task<List<Ingredient>> GetIngredientByDishId(int id)
   {
     try
     {
@@ -58,7 +58,7 @@ public class DishService : IDishService
     }
   }
 
-  public List<Product> GetProductsByIngredientId(int id)
+  public async Task<List<Product>> GetProductsByIngredientId(int id)
   {
     try
     {
