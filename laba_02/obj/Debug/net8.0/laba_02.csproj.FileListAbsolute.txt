@@ -108,3 +108,11 @@ D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\n
 D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\obj\Debug\net8.0\laba_02.csproj.AssemblyReference.cache
 D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\obj\Debug\net8.0\laba_02.csproj.Up2Date
 D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\obj\Debug\net8.0\laba_02.sourcelink.json
+D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\net8.0\ClosedXML.dll
+D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\net8.0\ClosedXML.Parser.dll
+D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\net8.0\ExcelNumberFormat.dll
+D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\net8.0\RBush.dll
+D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\net8.0\SixLabors.Fonts.dll
+D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\bin\Debug\net8.0\System.IO.Packaging.dll

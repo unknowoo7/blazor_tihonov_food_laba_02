@@ -1,0 +1,38 @@
+﻿@page "/products"
+@using laba_02.Services
+
+<div class="container mt-5">
+  <h2 class="mb-4">Список продуктов</h2>
+  <table class="table table-striped table-hover">
+    <thead class="table-primary">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Название продукта</th>
+      <th scope="col">Ед. измерения</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var product in products)
+    {
+      <tr>
+        <th scope="row">@product.ProductId</th>
+        <td>@product.ProductName</td>
+        <td>@product.UnitOfMeasurement</td>
+      </tr>
+    }
+    </tbody>
+  </table>
+</div>
+
+@code {
+  
+  [Inject] public required IProductService ProductService { get; set; }
+
+  List<Product> products = new List<Product>();
+  
+  protected override void OnInitialized()
+  {
+    products = ProductService.GetProducts();
+  }
+
+}

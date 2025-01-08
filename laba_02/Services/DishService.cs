@@ -45,12 +45,12 @@ public class DishService : IDishService
     }
   }
 
-  public async Task<List<Ingredient>> GetIngredientByDishId(int id)
+  public Task<List<Ingredient>> GetIngredientByDishId(int id)
   {
     try
     {
       List<Ingredient> ingredient = _dbContext.Ingredients.Where(i => i.DishId == id).ToList();
-      return ingredient;
+      return Task.FromResult(ingredient);
     }
     catch (Exception e)
     {
