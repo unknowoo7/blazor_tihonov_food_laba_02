@@ -1,7 +1,6 @@
 ﻿@page "/exportexcel"
 @using ClosedXML.Excel
 @using laba_02.Databse
-@using laba_02.Models
 @using Microsoft.EntityFrameworkCore
 @implements IAsyncDisposable
 @inject IJSRuntime JsRuntime
@@ -13,62 +12,63 @@
 <button type="button" class="btn btn-success mb-2" @onclick="@ExportXLSDishes">Экспорт всех таблиц в Excel</button>
 
 @code {
-  
-  [Inject]
-  private IDbContextFactory<DatabaseContext> DbFactory { get; set; }
-  
+
+  [Inject] private IDbContextFactory<DatabaseContext> DbFactory { get; set; }
+
   DatabaseContext context = default!;
 
   protected override async Task OnInitializedAsync()
   {
-    // возможно стоит сделать асинхрон
     context = DbFactory.CreateDbContext();
   }
-  
+
   public async Task ExportXLSDishes()
   {
-    var XLSStream = ExportXLSRezult();
+    var xlsData = await ExportXLSRezult();
+    var base64Data = Convert.ToBase64String(xlsData); // Преобразуем массив байтов в строку Base64
 
-    await JsRuntime.InvokeVoidAsync("BlazorDownloadFile", "Блюда.xlsx", XLSStream);
+    await JsRuntime.InvokeVoidAsync("BlazorDownloadFile", "Блюда.xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", base64Data);
   }
+
 
   private async Task<byte[]> ExportXLSRezult()
   {
     using var workbook = new XLWorkbook();
+
     var worksheet1 = workbook.Worksheets.Add("Products");
-    
     worksheet1.Cell(1, 1).Value = "ProductId";
     worksheet1.Cell(1, 2).Value = "ProductName";
     worksheet1.Cell(1, 3).Value = "UnitOfMeasurement";
-
     worksheet1.Row(1).Style.Font.Bold = true;
 
-    int i = 2;
-    foreach(var rez in context.Products){
-      worksheet1.Cell(i, 1).Value = rez.ProductId;
-      worksheet1.Cell(i, 2).Value = rez.ProductName;
-      worksheet1.Cell(i, 3).Value = rez.UnitOfMeasurement;
-      i++;
+    var products = await context.Products.ToListAsync();
+    int row = 2;
+    foreach (var product in products)
+    {
+      worksheet1.Cell(row, 1).Value = product.ProductId;
+      worksheet1.Cell(row, 2).Value = product.ProductName;
+      worksheet1.Cell(row, 3).Value = product.UnitOfMeasurement;
+      row++;
     }
-    
+
     var worksheet2 = workbook.Worksheets.Add("Ingredients");
     worksheet2.Cell(1, 1).Value = "IngredientId";
     worksheet2.Cell(1, 2).Value = "DishId";
     worksheet2.Cell(1, 3).Value = "ProductId";
     worksheet2.Cell(1, 4).Value = "ProductVolume";
-    
     worksheet2.Row(1).Style.Font.Bold = true;
 
-    i = 2;
-    foreach (var rez in context.Ingredients)
+    var ingredients = await context.Ingredients.ToListAsync();
+    row = 2;
+    foreach (var ingredient in ingredients)
     {
-      worksheet2.Cell(i, 1).Value = rez.IngredientId;
-      worksheet2.Cell(i, 2).Value = rez.DishId;
-      worksheet2.Cell(i, 3).Value = rez.ProductId;
-      worksheet2.Cell(i, 4).Value = rez.ProductVolume;
-      i++;
+      worksheet2.Cell(row, 1).Value = ingredient.IngredientId;
+      worksheet2.Cell(row, 2).Value = ingredient.DishId;
+      worksheet2.Cell(row, 3).Value = ingredient.ProductId;
+      worksheet2.Cell(row, 4).Value = ingredient.ProductVolume;
+      row++;
     }
-    
+
     var worksheet3 = workbook.Worksheets.Add("Dishes");
     worksheet3.Cell(1, 1).Value = "DishId";
     worksheet3.Cell(1, 2).Value = "DishType";
@@ -76,26 +76,28 @@
     worksheet3.Cell(1, 4).Value = "CookingOrder";
     worksheet3.Cell(1, 5).Value = "Calories";
     worksheet3.Cell(1, 6).Value = "Carbohydrates";
-    
     worksheet3.Row(1).Style.Font.Bold = true;
-    
-    i = 2;
-    foreach (var rez in context.Dishes)
-    {
-      worksheet3.Cell(i, 1).Value = rez.DishId;
-      worksheet3.Cell(i, 2).Value = rez.DishType;
-      worksheet3.Cell(i, 3).Value = rez.DishWeight;
-      worksheet3.Cell(i, 4).Value = rez.CookingOrder;
-      worksheet3.Cell(i, 5).Value = rez.Calories;
-      worksheet3.Cell(i, 6).Value = rez.Carbohydrates;
-      i++;
-    }
-    
-    MemoryStream XLSStream = new();
-    workbook.SaveAs(XLSStream);
 
-    return XLSStream.ToArray();
+    var dishes = await context.Dishes.ToListAsync();
+    row = 2;
+    foreach (var dish in dishes)
+    {
+      worksheet3.Cell(row, 1).Value = dish.DishId;
+      worksheet3.Cell(row, 2).Value = dish.DishType;
+      worksheet3.Cell(row, 3).Value = dish.DishWeight;
+      worksheet3.Cell(row, 4).Value = dish.CookingOrder;
+      worksheet3.Cell(row, 5).Value = dish.Calories;
+      worksheet3.Cell(row, 6).Value = dish.Carbohydrates;
+      row++;
+    }
+
+    using var memoryStream = new MemoryStream();
+    workbook.SaveAs(memoryStream);
+
+    Console.WriteLine(memoryStream.ToArray());
+
+    return memoryStream.ToArray();
   }
-  
+
   public async ValueTask DisposeAsync() => await context.DisposeAsync();
 }
