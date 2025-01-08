@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VdSO3IPOV1BlerglvbWw4wL/MA4sCLf/v4ecs+78aCc=",
+  "Hash": "mfk0qZ8N51NjfPhAKbuiX59mcHkhSIjbLExokFhhr0k=",
   "Source": "laba_02",
   "BasePath": "_content/laba_02",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\ЧГУ\\7 семестр\\Тихонов\\Web-Blazor\\laba_02\\laba_02\\wwwroot\\js\\openfile.js",
+      "SourceId": "laba_02",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ЧГУ\\7 семестр\\Тихонов\\Web-Blazor\\laba_02\\laba_02\\wwwroot\\",
+      "BasePath": "_content/laba_02",
+      "RelativePath": "js/openfile.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\openfile.js"
     }
   ]
 }

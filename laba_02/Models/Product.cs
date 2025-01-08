@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace laba_02;
+namespace laba_02.Models;
 
 public class Product
 {

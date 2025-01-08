@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "D:\\ЧГУ\\7 семестр\\Тихонов\\Web-Blazor\\laba_02\\laba_02\\wwwroot\\js\\openfile.js",
+      "PackagePath": "staticwebassets\\js\\openfile.js"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.laba_02.props",
       "PackagePath": "build\\laba_02.props"
     },

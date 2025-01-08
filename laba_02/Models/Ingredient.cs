@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace laba_02;
+namespace laba_02.Models;
 
 public class Ingredient
 {

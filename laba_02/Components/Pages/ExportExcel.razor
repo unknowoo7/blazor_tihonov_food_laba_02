@@ -1,5 +1,101 @@
-﻿<h3>ExportExcel</h3>
+﻿@page "/exportexcel"
+@using ClosedXML.Excel
+@using laba_02.Databse
+@using laba_02.Models
+@using Microsoft.EntityFrameworkCore
+@implements IAsyncDisposable
+@inject IJSRuntime JsRuntime
+@rendermode InteractiveServer
+
+
+<h2>Экспорт всех данных в excel</h2>
+
+<button type="button" class="btn btn-success mb-2" @onclick="@ExportXLSDishes">Экспорт всех таблиц в Excel</button>
 
 @code {
   
+  [Inject]
+  private IDbContextFactory<DatabaseContext> DbFactory { get; set; }
+  
+  DatabaseContext context = default!;
+
+  protected override async Task OnInitializedAsync()
+  {
+    // возможно стоит сделать асинхрон
+    context = DbFactory.CreateDbContext();
+  }
+  
+  public async Task ExportXLSDishes()
+  {
+    var XLSStream = ExportXLSRezult();
+
+    await JsRuntime.InvokeVoidAsync("BlazorDownloadFile", "Блюда.xlsx", XLSStream);
+  }
+
+  private async Task<byte[]> ExportXLSRezult()
+  {
+    using var workbook = new XLWorkbook();
+    var worksheet1 = workbook.Worksheets.Add("Products");
+    
+    worksheet1.Cell(1, 1).Value = "ProductId";
+    worksheet1.Cell(1, 2).Value = "ProductName";
+    worksheet1.Cell(1, 3).Value = "UnitOfMeasurement";
+
+    worksheet1.Row(1).Style.Font.Bold = true;
+
+    int i = 2;
+    foreach(var rez in context.Products){
+      worksheet1.Cell(i, 1).Value = rez.ProductId;
+      worksheet1.Cell(i, 2).Value = rez.ProductName;
+      worksheet1.Cell(i, 3).Value = rez.UnitOfMeasurement;
+      i++;
+    }
+    
+    var worksheet2 = workbook.Worksheets.Add("Ingredients");
+    worksheet2.Cell(1, 1).Value = "IngredientId";
+    worksheet2.Cell(1, 2).Value = "DishId";
+    worksheet2.Cell(1, 3).Value = "ProductId";
+    worksheet2.Cell(1, 4).Value = "ProductVolume";
+    
+    worksheet2.Row(1).Style.Font.Bold = true;
+
+    i = 2;
+    foreach (var rez in context.Ingredients)
+    {
+      worksheet2.Cell(i, 1).Value = rez.IngredientId;
+      worksheet2.Cell(i, 2).Value = rez.DishId;
+      worksheet2.Cell(i, 3).Value = rez.ProductId;
+      worksheet2.Cell(i, 4).Value = rez.ProductVolume;
+      i++;
+    }
+    
+    var worksheet3 = workbook.Worksheets.Add("Dishes");
+    worksheet3.Cell(1, 1).Value = "DishId";
+    worksheet3.Cell(1, 2).Value = "DishType";
+    worksheet3.Cell(1, 3).Value = "DishWeight";
+    worksheet3.Cell(1, 4).Value = "CookingOrder";
+    worksheet3.Cell(1, 5).Value = "Calories";
+    worksheet3.Cell(1, 6).Value = "Carbohydrates";
+    
+    worksheet3.Row(1).Style.Font.Bold = true;
+    
+    i = 2;
+    foreach (var rez in context.Dishes)
+    {
+      worksheet3.Cell(i, 1).Value = rez.DishId;
+      worksheet3.Cell(i, 2).Value = rez.DishType;
+      worksheet3.Cell(i, 3).Value = rez.DishWeight;
+      worksheet3.Cell(i, 4).Value = rez.CookingOrder;
+      worksheet3.Cell(i, 5).Value = rez.Calories;
+      worksheet3.Cell(i, 6).Value = rez.Carbohydrates;
+      i++;
+    }
+    
+    MemoryStream XLSStream = new();
+    workbook.SaveAs(XLSStream);
+
+    return XLSStream.ToArray();
+  }
+  
+  public async ValueTask DisposeAsync() => await context.DisposeAsync();
 }

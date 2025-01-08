@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using laba_02.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace laba_02.Databse;
