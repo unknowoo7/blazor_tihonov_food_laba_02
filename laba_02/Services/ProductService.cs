@@ -10,9 +10,9 @@ public interface IProductService
 
 public class ProductService : IProductService
 {
-  readonly DatabaseContext _dbContext;
+  readonly ApplicationDbContext _dbContext;
 
-  public ProductService(DatabaseContext dbContext)
+  public ProductService(ApplicationDbContext dbContext)
   {
     _dbContext = dbContext;
   }

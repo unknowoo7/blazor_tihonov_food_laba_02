@@ -13,9 +13,9 @@
 
 @code {
 
-  [Inject] private IDbContextFactory<DatabaseContext> DbFactory { get; set; }
+  [Inject] private IDbContextFactory<ApplicationDbContext> DbFactory { get; set; }
 
-  DatabaseContext context = default!;
+  ApplicationDbContext context = default!;
 
   protected override async Task OnInitializedAsync()
   {

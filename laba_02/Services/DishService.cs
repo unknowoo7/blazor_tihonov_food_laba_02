@@ -16,8 +16,8 @@ public interface IDishService
 
 public class DishService : IDishService
 {
-  readonly DatabaseContext _dbContext;
-  public DishService(DatabaseContext dbContext)
+  readonly ApplicationDbContext _dbContext;
+  public DishService(ApplicationDbContext dbContext)
   {
     _dbContext = dbContext;
   }

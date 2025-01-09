@@ -1,0 +1,249 @@
+﻿@page "/Account/Register"
+
+@using System.ComponentModel.DataAnnotations
+@using System.Text
+@using System.Text.Encodings.Web
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.WebUtilities
+@using laba_02.Data
+@using laba_02.Databse
+@using laba_02.Models
+
+@inject UserManager<ApplicationUser> UserManager
+@inject IUserStore<ApplicationUser> UserStore
+@inject SignInManager<ApplicationUser> SignInManager
+@inject IEmailSender<ApplicationUser> EmailSender
+@inject ILogger<Register> Logger
+@inject NavigationManager NavigationManager
+@inject IdentityRedirectManager RedirectManager
+@inject ApplicationDbContext dbContext
+
+<PageTitle>Зарегистрироваться на сайте</PageTitle>
+
+<h1>Зарегистрироваться на сайте</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <StatusMessage Message="@Message" />
+        <EditForm Model="Input" asp-route-returnUrl="@ReturnUrl" method="post" OnValidSubmit="RegisterUser" FormName="register">
+            <DataAnnotationsValidator />
+            <h2>Зарегистрироваться на сайте.</h2>
+            <hr />
+            <ValidationSummary class="text-danger" role="alert" />
+            <div class="form-floating mb-3">
+                <InputText @bind-Value="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <label for="email">Электронная почта</label>
+                <ValidationMessage For="() => Input.Email" class="text-danger" />
+            </div>
+            <div class="form-floating mb-3">
+                <InputText type="password" @bind-Value="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label for="password">Пароль</label>
+                <ValidationMessage For="() => Input.Password" class="text-danger" />
+            </div>
+            <div class="form-floating mb-3">
+                <InputText type="password" @bind-Value="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label for="confirm-password">Подтвердите пароль</label>
+                <ValidationMessage For="() => Input.ConfirmPassword" class="text-danger" />
+            </div>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Фамилия:</label> 
+                <InputText id="surname" @bind-Value="Input.Surname" class="form-control" /> 
+                <ValidationMessage For="() => Input.Surname" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="ima" class="form-label">Имя:</label> 
+                <InputText id="ima" @bind-Value="Input.Ima" class="form-control" /> 
+                <ValidationMessage For="() => Input.Ima" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="secsurname" class="form-label">Отчество:</label> 
+                <InputText id="secsurname" @bind-Value="Input.SecSurname" class="form-control" /> 
+                <ValidationMessage For="() => Input.SecSurname" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="pol" class="form-label">Пол:</label> 
+                <InputSelect id="pol" @bind-Value="Input.PolId" class="form-control">
+                    @foreach(Pol pol in pols)
+                    {
+                        <option value="@pol.Id">@pol.NamePol</option>
+                    }
+                </InputSelect>  
+                <ValidationMessage For="() => Input.PolId" class="text-danger" /> 
+            </div> 
+            <div class="mb-3">
+                <label for="pol" class="form-label">Название класса:</label> 
+                <InputSelect id="pol" @bind-Value="Input.DishId" class="form-control">
+                    @foreach(Dish dish in Dishes)
+                    {
+                        <option value="@dish.DishId">@dish.DishType</option>
+                    }
+                </InputSelect>  
+                <ValidationMessage For="() => Input.DishId" class="text-danger" /> 
+            </div>            
+                   
+            <div class="mb-3">
+                <label for="datebirth" class="form-label">Дата рождения:</label> 
+                <InputDate id="datebirth" @bind-Value="Input.DateBirth" class="form-control" /> 
+                <ValidationMessage For="() => Input.DateBirth" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="phone" class="form-label">Телефон:</label> 
+                <InputText id="phone" @bind-Value="Input.Phone" class="form-control" /> 
+                <ValidationMessage For="() => Input.Phone" class="text-danger" /> 
+            </div>
+            <button type="submit" class="w-100 btn btn-lg btn-primary">Зарегистрироваться</button>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private IEnumerable<IdentityError>? identityErrors;
+
+    [SupplyParameterFromForm]
+    private InputModel Input { get; set; } = new();
+
+    [SupplyParameterFromQuery]
+    private string? ReturnUrl { get; set; }
+
+    public List<Pol> pols;
+
+    public List<Dish> Dishes;
+
+    private string? Message => identityErrors is null ? null : $"Error: {string.Join(", ", identityErrors.Select(error => error.Description))}";
+
+    protected override void OnInitialized(){
+        
+        Dishes = dbContext.Dishes.OrderBy(d=>d.DishType).ToList();
+
+        pols = dbContext.Pols.ToList();
+
+    }
+
+    public async Task RegisterUser(EditContext editContext)
+    {
+        var user = new ApplicationUser() {
+            Surname = Input.Surname,
+            Ima = Input.Ima,
+            SecSurname = Input.SecSurname,
+            DateBirth = Input.DateBirth,
+            Phone = Input.Phone,
+            DishId = Input.DishId,
+            PolId = Input.PolId
+        };
+
+        await UserStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
+        var emailStore = GetEmailStore();
+        await emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+        var result = await UserManager.CreateAsync(user, Input.Password);
+
+        if (!result.Succeeded)
+        {
+            identityErrors = result.Errors;
+            return;
+        }
+
+       var releid = dbContext.Roles.FirstOrDefault(d=>d.Name=="Uchenik")!.Id;
+
+
+        dbContext.Add(new IdentityUserRole<string>(){
+                           UserId = user.Id,
+                           RoleId = releid
+        });
+
+        await dbContext.SaveChangesAsync();
+
+        Logger.LogInformation("User created a new account with password.");
+
+        var userId = await UserManager.GetUserIdAsync(user);
+        var code = await UserManager.GenerateEmailConfirmationTokenAsync(user);
+        code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+        var callbackUrl = NavigationManager.GetUriWithQueryParameters(
+            NavigationManager.ToAbsoluteUri("Account/ConfirmEmail").AbsoluteUri,
+            new Dictionary<string, object?> { ["userId"] = userId, ["code"] = code, ["returnUrl"] = ReturnUrl });
+
+        await EmailSender.SendConfirmationLinkAsync(user, Input.Email, HtmlEncoder.Default.Encode(callbackUrl));
+
+        if (UserManager.Options.SignIn.RequireConfirmedAccount)
+        {
+            RedirectManager.RedirectTo(
+                "Account/RegisterConfirmation",
+                new() { ["email"] = Input.Email, ["returnUrl"] = ReturnUrl });
+        }
+
+        await SignInManager.SignInAsync(user, isPersistent: false);
+        RedirectManager.RedirectTo(ReturnUrl);
+    }
+
+    private ApplicationUser CreateUser()
+    {
+        try
+        {
+            return Activator.CreateInstance<ApplicationUser>();
+        }
+        catch
+        {
+            throw new InvalidOperationException($"Can't create an instance of '{nameof(ApplicationUser)}'. " +
+                $"Ensure that '{nameof(ApplicationUser)}' is not an abstract class and has a parameterless constructor.");
+        }
+    }
+
+    private IUserEmailStore<ApplicationUser> GetEmailStore()
+    {
+        if (!UserManager.SupportsUserEmail)
+        {
+            throw new NotSupportedException("The default UI requires a user store with email support.");
+        }
+        return (IUserEmailStore<ApplicationUser>)UserStore;
+    }
+
+    private sealed class InputModel
+    {
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+        public string Email { get; set; } = "";
+
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+        public string Password { get; set; } = "";
+
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirm password")]
+        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        public string ConfirmPassword { get; set; } = "";
+
+         [Required]
+        [Display(Name = "Фамилия")]
+        [StringLength(100, ErrorMessage = "{0} должно быть не меньше {2} и не больше {1} символов.", MinimumLength = 3)]
+         public string? Surname { get; set;}
+
+        [Required]
+        [Display(Name = "Имя")]
+        [StringLength(100, ErrorMessage = "{0} должно быть не меньше {2} и не больше {1} символов.", MinimumLength = 3)]
+        public string? Ima { get; set;}
+
+        [Display(Name = "Отчество")]
+        public string? SecSurname { get; set;}
+
+         [Required]
+         [Display(Name = "Пол")]
+        public int? PolId { get; set; }
+
+         [Required]
+         [Display(Name = "Блюдо")]
+
+        public int? DishId { get; set; }
+
+         [Required]
+         [Display(Name = "Дата рождения")]
+
+        public DateTime? DateBirth { get; set; }
+
+         [Required]
+         [Display(Name = "Телефон")]
+
+        public string? Phone { get; set; }
+    }
+}

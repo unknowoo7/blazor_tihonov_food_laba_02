@@ -43,7 +43,7 @@ else
 
 @code {
 
-    [Inject] private IDbContextFactory<DatabaseContext> DbFactory { get; set; }
+    [Inject] private IDbContextFactory<ApplicationDbContext> DbFactory { get; set; }
 
     //ApplicationDbContext context = default!;
 
@@ -171,10 +171,10 @@ else
                                 ingredient.DishId = int.Parse(row.Cell(table.FindColumn(c => c.FirstCell().Value.ToString() == "DishId").RangeAddress.FirstAddress.ColumnNumber).Value.ToString());
                                 ingredient.ProductId = int.Parse(row.Cell(table.FindColumn(c => c.FirstCell().Value.ToString() == "ProductId").RangeAddress.FirstAddress.ColumnNumber).Value.ToString());
                                 ingredient.ProductVolume = double.Parse(row.Cell(table.FindColumn(c => c.FirstCell().Value.ToString() == "ProductVolume").RangeAddress.FirstAddress.ColumnNumber).Value.ToString());
-                                
+
                                 ingredient.Product = productList.Where(x => x.ProductId == int.Parse(row.Cell(table.FindColumn(c => c.FirstCell().Value.ToString() == "ProductId").RangeAddress.FirstAddress.ColumnNumber).Value.ToString())).FirstOrDefault()!;
                                 ingredient.Dish = DishList.Where(x => x.DishId == int.Parse(row.Cell(table.FindColumn(c => c.FirstCell().Value.ToString() == "DishId").RangeAddress.FirstAddress.ColumnNumber).Value.ToString())).FirstOrDefault()!;
-                                
+
                                 IngredientList.Add(ingredient);
                             }
                         }
@@ -199,33 +199,11 @@ else
 
                     using (var tr = context.Database.BeginTransaction())
                     {
-                        @* context.Rezults.ExecuteDelete();
-                    context.RelNormativs.ExecuteDelete();
-                    context.Normativs.ExecuteDelete();
-                    context.Users.ExecuteDelete();
-                    context.SchoolClasses.ExecuteDelete(); *@
-
                         context.AddRange(productList);
                         context.AddRange(DishList);
                         context.AddRange(IngredientList);
 
                         await context.SaveChangesAsync();
-
-                        // var releid = context.Roles.FirstOrDefault(d => d.Name == "Uchenik")!.Id;
-                        //
-                        // foreach (var user in ucheniksList)
-                        // {
-                        //     userrolesList.Add(new IdentityUserRole<string>
-                        //     {
-                        //         UserId = user.Id,
-                        //         RoleId = releid
-                        //     });
-                        // }
-                        //
-                        // context.AddRange(userrolesList);
-                        //
-                        // await context.SaveChangesAsync();
-
                         tr.Commit();
                     }
                 }
@@ -238,4 +216,5 @@ else
             }
         }
     }
+
 }

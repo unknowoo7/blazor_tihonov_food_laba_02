@@ -13,10 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("laba_02")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+650fbef550ba6641be7228747ddb407f7dc4bc53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09ffd5cb77e40a5e5bc5b00720824eb9ecfba5b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("laba_02")]
 [assembly: System.Reflection.AssemblyTitleAttribute("laba_02")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-
-// Создано классом WriteCodeFragment MSBuild.
-

@@ -10,9 +10,9 @@ public interface IIngredientService
 
 public class IngredientService : IIngredientService
 {
-  readonly DatabaseContext _dbContext;
+  readonly ApplicationDbContext _dbContext;
   
-  public IngredientService(DatabaseContext dbContext)
+  public IngredientService(ApplicationDbContext dbContext)
   {
     _dbContext = dbContext;
   }

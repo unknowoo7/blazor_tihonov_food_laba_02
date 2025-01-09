@@ -10,7 +10,7 @@ using laba_02.Databse;
 
 namespace laba_02.Migrations
 {
-    [DbContext(typeof(DatabaseContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20250106144446_InitialCreate")]
     partial class InitialCreate
     {
