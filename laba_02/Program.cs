@@ -55,6 +55,17 @@ builder.Services.AddIdentityCore<ApplicationUser>(options =>
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 
+//++ add http client
+builder.Services.AddHttpClient();
+
+// Add services to the container
+builder.Services.AddSignalR();
+builder.Services.AddServerSideBlazor();
+builder.Services.AddRazorPages();
+
+builder.Logging.SetMinimumLevel(LogLevel.Trace);
+builder.Logging.AddConsole();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -72,5 +83,12 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
+// +++Map the SignalR hub and define its URL (endpoint)
+//app.MapHub<UpdateNotificationHub>("/updateNotificationHub"); // URL for the hub
+app.MapBlazorHub(options =>
+{
+    options.CloseOnAuthenticationExpiration = true;
+}).WithOrder(-1);
 
 app.Run();

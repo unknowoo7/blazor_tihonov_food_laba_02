@@ -13,7 +13,7 @@
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
   <nav class="flex-column">
-    <AuthorizeView Roles="Cook">
+    <AuthorizeView Roles="Cook, Administrator">
       <div class="nav-item px-3">
         <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
@@ -57,6 +57,7 @@
         </div>
         <div class="nav-item px-3">
           <form action="Account/Logout" method="post">
+            @currentUrl
             <AntiforgeryToken/>
             <input type="hidden" name="ReturnUrl" value="@currentUrl"/>
             <button type="submit" class="nav-link">

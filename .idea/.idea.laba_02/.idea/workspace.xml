@@ -10,13 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d3cb01d-a036-48d0-9017-00106bade048" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/Index.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Register.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Register.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Data/ApplicationUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Data/ApplicationUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Data/SeedData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Data/SeedData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Components/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" afterDir="false" />
@@ -28,7 +25,6 @@
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +45,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/73/33cc2330/IDbContextFactory`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/9e/15381386/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3ad84587171985e43399d8ce4db653283edfeb719f811eba0c3cf369670b361/IdentityUserLogin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ddfe5f2cab585726db85fc046e76ea5725f69d647c242379a11c6da8029c727/ClaimsPrincipal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ef3d6cd94ec09c341473cf4707a236336a6f866c0f67e2cb91b1349acb8ea5/DataTable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/laba_02/wwwroot/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -146,7 +143,7 @@
       <workItem from="1736323896182" duration="12281000" />
       <workItem from="1736418262840" duration="7812000" />
       <workItem from="1736481258030" duration="2609000" />
-      <workItem from="1736504429589" duration="9979000" />
+      <workItem from="1736504429589" duration="11007000" />
     </task>
     <servers />
   </component>
@@ -173,14 +170,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/Index.razor</url>
-          <line>114</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/Index.razor</url>
-          <line>122</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/laba_02/Components/Account/IdentityComponentsEndpointRouteBuilderExtensions.cs</url>
+          <line>48</line>
+          <properties documentPath="D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\Components\Account\IdentityComponentsEndpointRouteBuilderExtensions.cs" containingFunctionPresentation="Lambda expression inside Method 'MapAdditionalIdentityEndpoints'">
+            <startOffsets>
+              <option value="2082" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2134" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
