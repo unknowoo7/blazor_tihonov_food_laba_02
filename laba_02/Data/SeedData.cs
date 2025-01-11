@@ -34,8 +34,7 @@ public class SeedData
       Phone = "234234234234",
       NormalizedEmail = "KAZAKOV@MAIL.RU",
       NormalizedUserName = "KAZAKOV@MAIL.RU",
-      LockoutEnabled = true,
-      DishId = null
+      LockoutEnabled = true
     };
 
     var passwordHasher = new PasswordHasher<ApplicationUser>();
