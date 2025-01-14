@@ -24,72 +24,76 @@
 
 <div class="row">
     <div class="col-md-4">
-        <StatusMessage Message="@Message" />
-        <EditForm Model="Input" asp-route-returnUrl="@ReturnUrl" method="post" OnValidSubmit="RegisterUser" FormName="register">
-            <DataAnnotationsValidator />
+        <StatusMessage Message="@Message"/>
+        <EditForm Model="Input" asp-route-returnUrl="@ReturnUrl" method="post" OnValidSubmit="RegisterUser"
+                  FormName="register">
+            <DataAnnotationsValidator/>
             <h2>Зарегистрироваться на сайте.</h2>
-            <hr />
-            <ValidationSummary class="text-danger" role="alert" />
+            <hr/>
+            <ValidationSummary class="text-danger" role="alert"/>
             <div class="form-floating mb-3">
-                <InputText @bind-Value="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <InputText @bind-Value="Input.Email" class="form-control" autocomplete="username" aria-required="true"
+                           placeholder="name@example.com"/>
                 <label for="email">Электронная почта</label>
-                <ValidationMessage For="() => Input.Email" class="text-danger" />
+                <ValidationMessage For="() => Input.Email" class="text-danger"/>
             </div>
             <div class="form-floating mb-3">
-                <InputText type="password" @bind-Value="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <InputText type="password" @bind-Value="Input.Password" class="form-control" autocomplete="new-password"
+                           aria-required="true" placeholder="password"/>
                 <label for="password">Пароль</label>
-                <ValidationMessage For="() => Input.Password" class="text-danger" />
+                <ValidationMessage For="() => Input.Password" class="text-danger"/>
             </div>
             <div class="form-floating mb-3">
-                <InputText type="password" @bind-Value="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <InputText type="password" @bind-Value="Input.ConfirmPassword" class="form-control"
+                           autocomplete="new-password" aria-required="true" placeholder="password"/>
                 <label for="confirm-password">Подтвердите пароль</label>
-                <ValidationMessage For="() => Input.ConfirmPassword" class="text-danger" />
+                <ValidationMessage For="() => Input.ConfirmPassword" class="text-danger"/>
             </div>
             <div class="mb-3">
-                <label for="surname" class="form-label">Фамилия:</label> 
-                <InputText id="surname" @bind-Value="Input.Surname" class="form-control" /> 
-                <ValidationMessage For="() => Input.Surname" class="text-danger" /> 
-            </div>        
+                <label for="surname" class="form-label">Фамилия:</label>
+                <InputText id="surname" @bind-Value="Input.Surname" class="form-control"/>
+                <ValidationMessage For="() => Input.Surname" class="text-danger"/>
+            </div>
             <div class="mb-3">
-                <label for="ima" class="form-label">Имя:</label> 
-                <InputText id="ima" @bind-Value="Input.Ima" class="form-control" /> 
-                <ValidationMessage For="() => Input.Ima" class="text-danger" /> 
-            </div>        
+                <label for="ima" class="form-label">Имя:</label>
+                <InputText id="ima" @bind-Value="Input.Ima" class="form-control"/>
+                <ValidationMessage For="() => Input.Ima" class="text-danger"/>
+            </div>
             <div class="mb-3">
-                <label for="secsurname" class="form-label">Отчество:</label> 
-                <InputText id="secsurname" @bind-Value="Input.SecSurname" class="form-control" /> 
-                <ValidationMessage For="() => Input.SecSurname" class="text-danger" /> 
-            </div>        
+                <label for="secsurname" class="form-label">Отчество:</label>
+                <InputText id="secsurname" @bind-Value="Input.SecSurname" class="form-control"/>
+                <ValidationMessage For="() => Input.SecSurname" class="text-danger"/>
+            </div>
             <div class="mb-3">
-                <label for="pol" class="form-label">Пол:</label> 
+                <label for="pol" class="form-label">Пол:</label>
                 <InputSelect id="pol" @bind-Value="Input.PolId" class="form-control">
-                    @foreach(Pol pol in pols)
+                    @foreach (Pol pol in pols)
                     {
                         <option value="@pol.Id">@pol.NamePol</option>
                     }
-                </InputSelect>  
-                <ValidationMessage For="() => Input.PolId" class="text-danger" /> 
-            </div> 
+                </InputSelect>
+                <ValidationMessage For="() => Input.PolId" class="text-danger"/>
+            </div>
+            @* <div class="mb-3"> *@
+            @*     <label for="pol" class="form-label">Название класса:</label>  *@
+            @*     <InputSelect id="pol" @bind-Value="Input.DishId" class="form-control"> *@
+            @*         @foreach(Dish dish in Dishes) *@
+            @*         { *@
+            @*             <option value="@dish.DishId">@dish.DishType</option> *@
+            @*         } *@
+            @*     </InputSelect>   *@
+            @*     <ValidationMessage For="() => Input.DishId" class="text-danger" />  *@
+            @* </div>             *@
+
             <div class="mb-3">
-                <label for="pol" class="form-label">Название класса:</label> 
-                <InputSelect id="pol" @bind-Value="Input.DishId" class="form-control">
-                    @foreach(Dish dish in Dishes)
-                    {
-                        <option value="@dish.DishId">@dish.DishType</option>
-                    }
-                </InputSelect>  
-                <ValidationMessage For="() => Input.DishId" class="text-danger" /> 
-            </div>            
-                   
+                <label for="datebirth" class="form-label">Дата рождения:</label>
+                <InputDate id="datebirth" @bind-Value="Input.DateBirth" class="form-control"/>
+                <ValidationMessage For="() => Input.DateBirth" class="text-danger"/>
+            </div>
             <div class="mb-3">
-                <label for="datebirth" class="form-label">Дата рождения:</label> 
-                <InputDate id="datebirth" @bind-Value="Input.DateBirth" class="form-control" /> 
-                <ValidationMessage For="() => Input.DateBirth" class="text-danger" /> 
-            </div>        
-            <div class="mb-3">
-                <label for="phone" class="form-label">Телефон:</label> 
-                <InputText id="phone" @bind-Value="Input.Phone" class="form-control" /> 
-                <ValidationMessage For="() => Input.Phone" class="text-danger" /> 
+                <label for="phone" class="form-label">Телефон:</label>
+                <InputText id="phone" @bind-Value="Input.Phone" class="form-control"/>
+                <ValidationMessage For="() => Input.Phone" class="text-danger"/>
             </div>
             <button type="submit" class="w-100 btn btn-lg btn-primary">Зарегистрироваться</button>
         </EditForm>
@@ -99,11 +103,9 @@
 @code {
     private IEnumerable<IdentityError>? identityErrors;
 
-    [SupplyParameterFromForm]
-    private InputModel Input { get; set; } = new();
+    [SupplyParameterFromForm] private InputModel Input { get; set; } = new();
 
-    [SupplyParameterFromQuery]
-    private string? ReturnUrl { get; set; }
+    [SupplyParameterFromQuery] private string? ReturnUrl { get; set; }
 
     public List<Pol> pols;
 
@@ -111,23 +113,23 @@
 
     private string? Message => identityErrors is null ? null : $"Error: {string.Join(", ", identityErrors.Select(error => error.Description))}";
 
-    protected override void OnInitialized(){
-        
-        Dishes = dbContext.Dishes.OrderBy(d=>d.DishType).ToList();
+    protected override void OnInitialized()
+    {
+        Dishes = dbContext.Dishes.OrderBy(d => d.DishType).ToList();
 
         pols = dbContext.Pols.ToList();
-
     }
 
     public async Task RegisterUser(EditContext editContext)
     {
-        var user = new ApplicationUser() {
+        var user = new ApplicationUser()
+        {
             Surname = Input.Surname,
             Ima = Input.Ima,
             SecSurname = Input.SecSurname,
-            DateBirth = Input.DateBirth,
+            DateBirth = DateTime.SpecifyKind(Input.DateBirth, DateTimeKind.Utc),
             Phone = Input.Phone,
-            DishId = Input.DishId,
+            // DishId = Input.DishId,
             PolId = Input.PolId
         };
 
@@ -142,12 +144,12 @@
             return;
         }
 
-       var releid = dbContext.Roles.FirstOrDefault(d=>d.Name=="Uchenik")!.Id;
+        var releid = dbContext.Roles.FirstOrDefault(d => d.Name == "Cook")!.Id;
 
-
-        dbContext.Add(new IdentityUserRole<string>(){
-                           UserId = user.Id,
-                           RoleId = releid
+        dbContext.Add(new IdentityUserRole<string>()
+        {
+            UserId = user.Id,
+            RoleId = releid
         });
 
         await dbContext.SaveChangesAsync();
@@ -183,7 +185,7 @@
         catch
         {
             throw new InvalidOperationException($"Can't create an instance of '{nameof(ApplicationUser)}'. " +
-                $"Ensure that '{nameof(ApplicationUser)}' is not an abstract class and has a parameterless constructor.");
+                                                $"Ensure that '{nameof(ApplicationUser)}' is not an abstract class and has a parameterless constructor.");
         }
     }
 
@@ -193,6 +195,7 @@
         {
             throw new NotSupportedException("The default UI requires a user store with email support.");
         }
+
         return (IUserEmailStore<ApplicationUser>)UserStore;
     }
 
@@ -214,36 +217,31 @@
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; } = "";
 
-         [Required]
+        [Required]
         [Display(Name = "Фамилия")]
         [StringLength(100, ErrorMessage = "{0} должно быть не меньше {2} и не больше {1} символов.", MinimumLength = 3)]
-         public string? Surname { get; set;}
+        public string? Surname { get; set; }
 
         [Required]
         [Display(Name = "Имя")]
         [StringLength(100, ErrorMessage = "{0} должно быть не меньше {2} и не больше {1} символов.", MinimumLength = 3)]
-        public string? Ima { get; set;}
+        public string? Ima { get; set; }
 
-        [Display(Name = "Отчество")]
-        public string? SecSurname { get; set;}
+        [Display(Name = "Отчество")] public string? SecSurname { get; set; }
 
-         [Required]
-         [Display(Name = "Пол")]
-        public int? PolId { get; set; }
+        [Required] [Display(Name = "Пол")] public int? PolId { get; set; }
+        //
+        //  [Required]
+        //  [Display(Name = "Блюдо")]
+        //
+        // public int? DishId { get; set; }
 
-         [Required]
-         [Display(Name = "Блюдо")]
+        [Required]
+        [Display(Name = "Дата рождения")]
 
-        public int? DishId { get; set; }
+        public DateTime DateBirth { get; set; }
 
-         [Required]
-         [Display(Name = "Дата рождения")]
-
-        public DateTime? DateBirth { get; set; }
-
-         [Required]
-         [Display(Name = "Телефон")]
-
-        public string? Phone { get; set; }
+        [Required] [Display(Name = "Телефон")] public string? Phone { get; set; }
     }
+
 }

@@ -1,5 +1,4 @@
-﻿@using Microsoft.AspNetCore.Components.Authorization
-@implements IDisposable
+﻿@implements IDisposable
 
 @inject NavigationManager NavigationManager
 
@@ -13,7 +12,7 @@
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
   <nav class="flex-column">
-    <AuthorizeView Roles="Cook">
+    <AuthorizeView Roles="Cook, Administrator">
       <div class="nav-item px-3">
         <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
@@ -52,15 +51,21 @@
       <Authorized>
         <div class="nav-item px-3">
           <NavLink class="nav-link" href="Account/Manage">
-            <span class="bi bi-person-fill-nav-menu" aria-hidden="true"></span> @context.User.Identity?.Name
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+            </svg> @context.User.Identity?.Name
           </NavLink>
         </div>
         <div class="nav-item px-3">
           <form action="Account/Logout" method="post">
+            @currentUrl
             <AntiforgeryToken/>
             <input type="hidden" name="ReturnUrl" value="@currentUrl"/>
             <button type="submit" class="nav-link">
-              <span class="bi bi-arrow-bar-left-nav-menu" aria-hidden="true"></span> Выйти
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+              </svg> Выйти
             </button>
           </form>
         </div>
@@ -68,12 +73,18 @@
       <NotAuthorized>
         <div class="nav-item px-3">
           <NavLink class="nav-link" href="Account/Register">
-            <span class="bi bi-person-nav-menu" aria-hidden="true"></span> Регистрация
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+              <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+            </svg> Регистрация
           </NavLink>
         </div>
         <div class="nav-item px-3">
           <NavLink class="nav-link" href="Account/Login">
-            <span class="bi bi-person-badge-nav-menu" aria-hidden="true"></span> Авторизация
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-indent" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M3 8a.5.5 0 0 1 .5-.5h6.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H3.5A.5.5 0 0 1 3 8"/>
+              <path fill-rule="evenodd" d="M12.5 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5"/>
+            </svg> Авторизация
           </NavLink>
         </div>
       </NotAuthorized>

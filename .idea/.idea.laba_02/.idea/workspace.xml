@@ -9,94 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d3cb01d-a036-48d0-9017-00106bade048" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/IdentityComponentsEndpointRouteBuilderExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/IdentityNoOpEmailSender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/IdentityRedirectManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/IdentityRevalidatingAuthenticationStateProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/IdentityUserAccessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/AccessDenied.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/ConfirmEmail.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/ConfirmEmailChange.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/ExternalLogin.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/ForgotPassword.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/ForgotPasswordConfirmation.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/InvalidPasswordReset.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/InvalidUser.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Lockout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Login.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/LoginWith2fa.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/LoginWithRecoveryCode.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/ChangePassword.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/DeletePersonalData.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/Disable2fa.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/Email.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/EnableAuthenticator.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/ExternalLogins.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/GenerateRecoveryCodes.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/Index.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/PersonalData.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/ResetAuthenticator.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/SetPassword.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/TwoFactorAuthentication.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Manage/_Imports.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/Register.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/RegisterConfirmation.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/ResendEmailConfirmation.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/ResetPassword.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/ResetPasswordConfirmation.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Pages/_Imports.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Shared/AccountLayout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Shared/ExternalLoginPicker.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Shared/ManageLayout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Shared/ManageNavMenu.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Shared/RedirectToLogin.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Shared/ShowRecoveryCodes.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Components/Account/Shared/StatusMessage.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Data/ApplicationUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Data/SeedData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Databse/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laba_02/Models/Pol.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/dataSources/730ef1b5-f8ad-49da-8163-2a7b5c084ccd/storage_v2/_src_/database/laba_02.rZU5_A/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Components/Pages/ExportExcel.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Pages/ExportExcel.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Components/Pages/ImportExcel.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Pages/ImportExcel.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Databse/DatabaseContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Migrations/20250106144320_Initial.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Migrations/20250106144320_Initial.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Migrations/20250106144446_InitialCreate.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Migrations/20250106144446_InitialCreate.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Migrations/DatabaseContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Migrations/DatabaseContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Services/DishService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Services/DishService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Services/IngredientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Services/IngredientService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/Services/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Services/ProductService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/laba_02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/laba_02.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/laba_02.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/laba_02.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laba_02/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.restore.info" afterDir="false" />
-    </list>
+    <list default="true" id="8d3cb01d-a036-48d0-9017-00106bade048" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,14 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/243a037ca7a04510a506adfdd94befbac90930/79/c9d36e35/NotImplementedException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7bd7b7d9cd6e4c8688ada5eb58e57eeb2ba938/9a/6b60bd6d/DataException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/38/90552eeb/InternalDbSet`1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/73/33cc2330/IDbContextFactory`1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/9e/15381386/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3ad84587171985e43399d8ce4db653283edfeb719f811eba0c3cf369670b361/IdentityUserLogin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ef3d6cd94ec09c341473cf4707a236336a6f866c0f67e2cb91b1349acb8ea5/DataTable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02/Components/Pages/ImportExcel.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02/Data/SeedData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/laba_02/wwwroot/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -134,8 +40,9 @@
     ".NET Launch Settings Profile.laba_02: http.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "auth",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02.sln",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -212,6 +119,11 @@
       <workItem from="1736140829578" duration="19440000" />
       <workItem from="1736323896182" duration="12281000" />
       <workItem from="1736418262840" duration="7812000" />
+      <workItem from="1736481258030" duration="2609000" />
+      <workItem from="1736504429589" duration="13432000" />
+      <workItem from="1736662236626" duration="6433000" />
+      <workItem from="1736759906330" duration="56000" />
+      <workItem from="1736783587484" duration="6296000" />
     </task>
     <servers />
   </component>
@@ -233,5 +145,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/laba_02/Components/Account/IdentityComponentsEndpointRouteBuilderExtensions.cs</url>
+          <line>48</line>
+          <properties documentPath="D:\ЧГУ\7 семестр\Тихонов\Web-Blazor\laba_02\laba_02\Components\Account\IdentityComponentsEndpointRouteBuilderExtensions.cs" containingFunctionPresentation="Lambda expression inside Method 'MapAdditionalIdentityEndpoints'">
+            <startOffsets>
+              <option value="2082" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2134" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

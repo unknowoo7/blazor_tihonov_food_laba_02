@@ -15,14 +15,10 @@ namespace laba_02.Data
 
         public int? PolId { get; set; }
 
-        public int? DishId { get; set; }
-
-        public DateTime? DateBirth { get; set; }
+        public DateTime DateBirth { get; set; }
 
         public string? Phone { get; set; }
-
-        public Dish? Dish { get; set; }
-
+        
         public Pol? Pol { get; set; }
     }
 

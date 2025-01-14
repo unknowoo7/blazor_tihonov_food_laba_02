@@ -15,62 +15,63 @@
 <PageTitle>Профиль</PageTitle>
 
 <h3>Профиль</h3>
-<StatusMessage />
+<StatusMessage/>
 
 <div class="row">
     <div class="col-md-6">
         <EditForm Model="Input" FormName="profile" OnValidSubmit="OnValidSubmitAsync" method="post">
-            <DataAnnotationsValidator />
-            <ValidationSummary class="text-danger" role="alert" />
+            <DataAnnotationsValidator/>
+            <ValidationSummary class="text-danger" role="alert"/>
             <div class="form-floating mb-3">
-                <input type="text" value="@username" class="form-control" placeholder="Please choose your username." disabled />
+                <input type="text" value="@username" class="form-control" placeholder="Please choose your username."
+                       disabled/>
                 <label for="username" class="form-label">Имя пользователя</label>
             </div>
             <div class="mb-3">
-                <label for="surname" class="form-label">Фамилия:</label> 
-                <InputText id="surname" @bind-Value="Input.Surname" class="form-control" /> 
-                <ValidationMessage For="() => Input.Surname" class="text-danger" /> 
-            </div>        
+                <label for="surname" class="form-label">Фамилия:</label>
+                <InputText id="surname" @bind-Value="Input.Surname" class="form-control"/>
+                <ValidationMessage For="() => Input.Surname" class="text-danger"/>
+            </div>
             <div class="mb-3">
-                <label for="ima" class="form-label">Имя:</label> 
-                <InputText id="ima" @bind-Value="Input.Ima" class="form-control" /> 
-                <ValidationMessage For="() => Input.Ima" class="text-danger" /> 
-            </div>        
+                <label for="ima" class="form-label">Имя:</label>
+                <InputText id="ima" @bind-Value="Input.Ima" class="form-control"/>
+                <ValidationMessage For="() => Input.Ima" class="text-danger"/>
+            </div>
             <div class="mb-3">
-                <label for="secsurname" class="form-label">Отчество:</label> 
-                <InputText id="secsurname" @bind-Value="Input.SecSurname" class="form-control" /> 
-                <ValidationMessage For="() => Input.SecSurname" class="text-danger" /> 
-            </div>        
+                <label for="secsurname" class="form-label">Отчество:</label>
+                <InputText id="secsurname" @bind-Value="Input.SecSurname" class="form-control"/>
+                <ValidationMessage For="() => Input.SecSurname" class="text-danger"/>
+            </div>
             <div class="mb-3">
-                <label for="pol" class="form-label">Пол:</label> 
+                <label for="pol" class="form-label">Пол:</label>
                 <InputSelect id="pol" @bind-Value="Input.PolId" class="form-control">
-                    @foreach(Pol pol in pols)
+                    @foreach (Pol pol in pols)
                     {
                         <option value="@pol.Id">@pol.NamePol</option>
                     }
-                </InputSelect>  
-                <ValidationMessage For="() => Input.PolId" class="text-danger" /> 
-            </div> 
+                </InputSelect>
+                <ValidationMessage For="() => Input.PolId" class="text-danger"/>
+            </div>
+            @* <div class="mb-3"> *@
+            @*     <label for="pol" class="form-label">Название класса:</label> *@
+            @*     <InputSelect id="pol" @bind-Value="Input.DishId" class="form-control"> *@
+            @*         @foreach (Dish dish in Dishes) *@
+            @*         { *@
+            @*             <option value="@dish.DishId">@dish.DishType</option> *@
+            @*         } *@
+            @*     </InputSelect> *@
+            @*     <ValidationMessage For="() => Input.DishId" class="text-danger"/> *@
+            @* </div> *@
+
             <div class="mb-3">
-                <label for="pol" class="form-label">Название класса:</label> 
-                <InputSelect id="pol" @bind-Value="Input.DishId" class="form-control">
-                    @foreach(Dish dish in Dishes)
-                    {
-                        <option value="@dish.DishId">@dish.DishType</option>
-                    }
-                </InputSelect>  
-                <ValidationMessage For="() => Input.DishId" class="text-danger" /> 
-            </div>            
-                   
+                <label for="datebirth" class="form-label">Дата рождения:</label>
+                <InputDate id="datebirth" @bind-Value="Input.DateBirth" class="form-control"/>
+                <ValidationMessage For="() => Input.DateBirth" class="text-danger"/>
+            </div>
             <div class="mb-3">
-                <label for="datebirth" class="form-label">Дата рождения:</label> 
-                <InputDate id="datebirth" @bind-Value="Input.DateBirth" class="form-control" /> 
-                <ValidationMessage For="() => Input.DateBirth" class="text-danger" /> 
-            </div>        
-            <div class="mb-3">
-                <label for="phone" class="form-label">Телефон:</label> 
-                <InputText id="phone" @bind-Value="Input.Phone" class="form-control" /> 
-                <ValidationMessage For="() => Input.Phone" class="text-danger" /> 
+                <label for="phone" class="form-label">Телефон:</label>
+                <InputText id="phone" @bind-Value="Input.Phone" class="form-control"/>
+                <ValidationMessage For="() => Input.Phone" class="text-danger"/>
             </div>
             <button type="submit" class="w-100 btn btn-lg btn-primary">Внести изменения</button>
         </EditForm>
@@ -90,26 +91,24 @@
 
     private int? PolId;
 
-    private int? DishId;
+    // private int? DishId;
 
     private string? Phone;
 
-    public List<Pol> pols ;
+    public List<Pol> pols;
 
-    public List<Dish> Dishes ;
+    public List<Dish> Dishes;
 
-    public DateTime? DateBirth;
+    public DateTime DateBirth;
 
-    [CascadingParameter]
-    private HttpContext HttpContext { get; set; } = default!;
+    [CascadingParameter] private HttpContext HttpContext { get; set; } = default!;
 
-    [SupplyParameterFromForm]
-    private InputModel Input { get; set; } = new();
+    [SupplyParameterFromForm] private InputModel Input { get; set; } = new();
 
     protected override async Task OnInitializedAsync()
     {
-        Dishes =  dbContext.Dishes.OrderBy(d=>d.DishType).ToList();
-    
+        Dishes = dbContext.Dishes.OrderBy(d => d.DishType).ToList();
+
         pols = dbContext.Pols.ToList();
 
         user = await UserAccessor.GetRequiredUserAsync(HttpContext);
@@ -127,7 +126,7 @@
 
         PolId = user.PolId;
 
-        DishId = user.DishId;
+        // DishId = user.DishId;
 
         Input.Surname ??= Surname;
 
@@ -135,15 +134,15 @@
 
         Input.SecSurname ??= SecSurname;
 
-        Input.DateBirth ??= DateBirth;
+        Input.DateBirth = DateBirth;
 
         Input.Phone ??= Phone;
 
         Input.PolId ??= PolId;
 
-        Input.DishId ??= DishId;
+        // Input.DishId ??= DishId;
 
-       // Input.PhoneNumber ??= phoneNumber;
+        // Input.PhoneNumber ??= phoneNumber;
     }
 
     private async Task OnValidSubmitAsync()
@@ -155,7 +154,7 @@
 
             if (!setSurname.Succeeded)
             {
-               RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления фамилии.", HttpContext);
+                RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления фамилии.", HttpContext);
             }
         }
 
@@ -163,68 +162,65 @@
         {
             user.Ima = Input.Ima;
             var setIma = await UserManager.UpdateAsync(user);
-            
+
             if (!setIma.Succeeded)
             {
-               RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления имени.", HttpContext);
+                RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления имени.", HttpContext);
             }
         }
 
         if (Input.SecSurname != SecSurname)
         {
-
             user.SecSurname = Input.SecSurname;
             var setSecSurname = await UserManager.UpdateAsync(user);
-            
+
             if (!setSecSurname.Succeeded)
             {
-               RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления отчества.", HttpContext);
+                RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления отчества.", HttpContext);
             }
         }
 
         if (Input.PolId != PolId)
         {
-
             user.PolId = Input.PolId;
             var setPolId = await UserManager.UpdateAsync(user);
-            
+
             if (!setPolId.Succeeded)
             {
-               RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления пола.", HttpContext);
+                RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления пола.", HttpContext);
             }
         }
 
-        if (Input.DishId != DishId)
-        {
-
-            user.DishId = Input.DishId;
-            var setDishId = await UserManager.UpdateAsync(user);
-            
-            if (!setDishId.Succeeded)
-            {
-               RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления блюда.", HttpContext);
-            }
-        }
+        // if (Input.DishId != DishId)
+        // {
+        //
+        //     user.DishId = Input.DishId;
+        //     var setDishId = await UserManager.UpdateAsync(user);
+        //     
+        //     if (!setDishId.Succeeded)
+        //     {
+        //        RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления блюда.", HttpContext);
+        //     }
+        // }
         if (Input.DateBirth != DateBirth)
         {
-
             user.DateBirth = Input.DateBirth;
             var setDateBirth = await UserManager.UpdateAsync(user);
-            
+
             if (!setDateBirth.Succeeded)
             {
-               RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления даты рождения.", HttpContext);
+                RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления даты рождения.", HttpContext);
             }
         }
-         if (Input.Phone != Phone)
-        {
 
+        if (Input.Phone != Phone)
+        {
             user.Phone = Input.Phone;
             var setPhone = await UserManager.UpdateAsync(user);
-            
+
             if (!setPhone.Succeeded)
             {
-               RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления даты рождения.", HttpContext);
+                RedirectManager.RedirectToCurrentPageWithStatus("Ошибка: Ошибка обновления даты рождения.", HttpContext);
             }
         }
 
@@ -250,33 +246,25 @@
         [Required]
         [Display(Name = "Фамилия")]
         [StringLength(100, ErrorMessage = "{0} должно быть не меньше {2} и не больше {1} символов.", MinimumLength = 3)]
-         public string? Surname { get; set;}
+        public string? Surname { get; set; }
 
         [Required]
         [Display(Name = "Имя")]
         [StringLength(100, ErrorMessage = "{0} должно быть не меньше {2} и не больше {1} символов.", MinimumLength = 3)]
-        public string? Ima { get; set;}
+        public string? Ima { get; set; }
 
-        [Display(Name = "Отчество")]
-        public string? SecSurname { get; set;}
+        [Display(Name = "Отчество")] public string? SecSurname { get; set; }
 
-         [Required]
-         [Display(Name = "Пол")]
-        public int? PolId { get; set; }
+        [Required] [Display(Name = "Пол")] public int? PolId { get; set; }
 
-         [Required]
-         [Display(Name = "Блюдо")]
+        // [Required] [Display(Name = "Блюдо")] public int? DishId { get; set; }
 
-        public int? DishId { get; set; }
+        [Required]
+        [Display(Name = "Дата рождения")]
 
-         [Required]
-         [Display(Name = "Дата рождения")]
+        public DateTime DateBirth { get; set; }
 
-        public DateTime? DateBirth { get; set; }
-
-         [Required]
-         [Display(Name = "Телефон")]
-
-        public string? Phone { get; set; }
+        [Required] [Display(Name = "Телефон")] public string? Phone { get; set; }
     }
+
 }
