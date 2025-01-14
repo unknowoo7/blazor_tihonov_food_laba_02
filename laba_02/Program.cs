@@ -76,19 +76,23 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
 // +++Map the SignalR hub and define its URL (endpoint)
-//app.MapHub<UpdateNotificationHub>("/updateNotificationHub"); // URL for the hub
+app.MapHub<UpdateNotificationHub>("/updateNotificationHub"); // URL for the hub
 app.MapBlazorHub(options =>
 {
     options.CloseOnAuthenticationExpiration = true;
 }).WithOrder(-1);
+
+// Add additional endpoints required by the Identity /Account Razor components.
+app.MapAdditionalIdentityEndpoints();
 
 app.Run();

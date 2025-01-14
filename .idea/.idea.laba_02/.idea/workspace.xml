@@ -10,7 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d3cb01d-a036-48d0-9017-00106bade048" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/laba_02/Data/UpdateNotificationHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,15 +40,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/243a037ca7a04510a506adfdd94befbac90930/79/c9d36e35/NotImplementedException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/243a037ca7a04510a506adfdd94befbac90930/ba/ea564ab2/DateTime.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7bd7b7d9cd6e4c8688ada5eb58e57eeb2ba938/9a/6b60bd6d/DataException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/38/90552eeb/InternalDbSet`1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/73/33cc2330/IDbContextFactory`1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/9e/15381386/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3ad84587171985e43399d8ce4db653283edfeb719f811eba0c3cf369670b361/IdentityUserLogin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ddfe5f2cab585726db85fc046e76ea5725f69d647c242379a11c6da8029c727/ClaimsPrincipal.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ef3d6cd94ec09c341473cf4707a236336a6f866c0f67e2cb91b1349acb8ea5/DataTable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02/Data/SeedData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/laba_02/wwwroot/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -52,6 +60,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "auth",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02.sln",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,7 +138,10 @@
       <workItem from="1736323896182" duration="12281000" />
       <workItem from="1736418262840" duration="7812000" />
       <workItem from="1736481258030" duration="2609000" />
-      <workItem from="1736504429589" duration="11099000" />
+      <workItem from="1736504429589" duration="13432000" />
+      <workItem from="1736662236626" duration="6433000" />
+      <workItem from="1736759906330" duration="56000" />
+      <workItem from="1736783587484" duration="5591000" />
     </task>
     <servers />
   </component>
