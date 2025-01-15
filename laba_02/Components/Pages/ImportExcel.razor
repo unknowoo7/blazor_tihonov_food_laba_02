@@ -1,4 +1,5 @@
 ﻿@page "/importexcel"
+@attribute [Authorize(Roles = "Administrator")]
 
 @rendermode InteractiveServer
 @using ClosedXML.Excel

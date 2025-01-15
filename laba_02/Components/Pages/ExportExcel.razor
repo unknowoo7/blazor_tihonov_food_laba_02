@@ -1,4 +1,6 @@
 ﻿@page "/exportexcel"
+@attribute [Authorize(Roles = "Administrator")]
+
 @using ClosedXML.Excel
 @using laba_02.Databse
 @using Microsoft.EntityFrameworkCore

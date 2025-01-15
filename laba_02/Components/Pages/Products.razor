@@ -29,7 +29,7 @@
   
   [Inject] public required IProductService ProductService { get; set; }
 
-  List<Product> products = new List<Product>();
+  List<Product> products = new();
   
   protected override void OnInitialized()
   {

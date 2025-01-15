@@ -1,4 +1,7 @@
 ﻿@page "/dish/{id:int}"
+@attribute [Authorize(Roles = "Administrator, Cook")]
+
+
 @using laba_02.Models
 @using laba_02.Services
 @inject IJSRuntime JsRuntime

@@ -9,7 +9,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d3cb01d-a036-48d0-9017-00106bade048" name="Changes" comment="" />
+    <list default="true" id="8d3cb01d-a036-48d0-9017-00106bade048" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.laba_02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Components/Pages/DishInfo.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Pages/DishInfo.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Components/Pages/ExportExcel.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Pages/ExportExcel.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Components/Pages/ImportExcel.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Pages/ImportExcel.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/Components/Pages/Products.razor" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/Components/Pages/Products.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Debug/net8.0/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/publish/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/publish/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/publish/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/publish/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/publish/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/bin/Release/net8.0/linux-x64/publish/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/laba_02.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/ref/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Debug/net8.0/refint/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/laba_02.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/ref/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/ref/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/refint/laba_02.dll" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/Release/net8.0/linux-x64/refint/laba_02.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba_02/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/laba_02/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,10 +59,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02/Data/SeedData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1d8b23e1e431b24cf7c1dfb82e9beaa902041dd7e3da0f56c5991144595/AuthorizeAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/laba_02/Components/Layout/NavMenu.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/laba_02/Components/Pages/ExportExcel.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/laba_02/wwwroot/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -35,28 +77,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.laba_02: http.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "auth",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02.sln",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.laba_02: http.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ЧГУ/7 семестр/Тихонов/Web-Blazor/laba_02/laba_02.sln&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.laba_02: http">
     <configuration name="laba_02: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/laba_02/laba_02.csproj" />
@@ -124,6 +166,7 @@
       <workItem from="1736662236626" duration="6433000" />
       <workItem from="1736759906330" duration="56000" />
       <workItem from="1736783587484" duration="6296000" />
+      <workItem from="1736860443786" duration="2527000" />
     </task>
     <servers />
   </component>
